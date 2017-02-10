@@ -1,0 +1,7 @@
+<h1>Pictures</h1>
+
+<% @pictures.each do |picture| %>
+  <p>コメント:<%= picture.content %></p>
+<% end %>
+
+<%= link_to "投稿", new_pictuer_path %>
