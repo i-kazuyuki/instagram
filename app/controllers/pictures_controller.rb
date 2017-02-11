@@ -16,6 +16,7 @@ class PicturesController < ApplicationController
 
   def create
     @picture = Picture.new(pictures_params)
+    @picture.user_id = current_user.id
     if @picture.save
       # 一覧画面へ遷移して"ブログを作成しました！"とメッセージを表示します。
       redirect_to pictures_path, notice: "投稿しました"
