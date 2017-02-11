@@ -1,4 +1,8 @@
 class PicturesController < ApplicationController
+
+  # ログインの有無をチェックするメソッド
+  before_action :authenticate_user!
+
   # before_actionでアクションのメソッドが実行される前に、指定したメソッドを実行することができる。
   before_action :set_picture, only: [:edit, :update, :destroy]
 
