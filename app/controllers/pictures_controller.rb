@@ -20,6 +20,7 @@ class PicturesController < ApplicationController
     if @picture.save
       # 一覧画面へ遷移して"ブログを作成しました！"とメッセージを表示します。
       redirect_to pictures_path, notice: "投稿しました"
+      NoticeMailer.sendmail_picture(@picture).deliver
     else
       # 入力フォームを再描画します。
       render 'new'
