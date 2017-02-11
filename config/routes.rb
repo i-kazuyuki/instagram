@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'top#index'
+
   resources :pictures, only: [:index, :new, :create, :edit, :update, :destroy]
 
 
