@@ -36,6 +36,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'twitter-bootstrap-rails'
 # ログイン機能実装のためのdeviseのgem
 gem 'devise'
+# 管理画面作成のgem
+gem 'rails_admin'
+gem 'cancan'
 
 
 group :development do
