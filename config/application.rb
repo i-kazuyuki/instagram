@@ -24,6 +24,6 @@ module Instagram
     config.active_record.raise_in_transactional_callbacks = true
 
     # エラー出力タグをを表示させないようにする。
-    config.action_view.field_error_proc = proc { |html_tag, instance| html_tag }
+    config.action_view.field_error_proc = proc { |html_tag, _| html_tag }
   end
 end
