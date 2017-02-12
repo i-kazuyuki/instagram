@@ -39,10 +39,19 @@ gem 'devise'
 # 管理画面作成のgem
 gem 'rails_admin'
 gem 'cancan'
+# SNSログイン用のgem
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+# 画像アップロード用のgem
+gem 'carrierwave'
+# アップロードした画像ファイルのサイズを変更するためのgem
+gem 'rmagick'
 
 
 group :development do
   gem 'letter_opener_web'
+  gem 'dotenv-rails'
 end
 
 
